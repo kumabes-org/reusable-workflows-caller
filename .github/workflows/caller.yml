@@ -1,0 +1,12 @@
+name: "reusable-workflows-caller"
+
+on: push
+
+jobs:
+  reusable-workflows-called:
+    uses: kumabes-org/reusable-workflows-called/.github/workflows/called.yml@main
+    with:
+      url: "https://google.com"
+    secrets:
+      username: ${{ secrets.username }}
+      password: ${{ secrets.password }}
