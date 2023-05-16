@@ -7,6 +7,7 @@ jobs:
     uses: kumabes-org/reusable-workflows-called/.github/workflows/called.yml@main
     with:
       url: "https://google.com"
+    secrets: inherit
     # secrets:
     #   username: ${{ secrets.username }}
     #   password: ${{ secrets.password }}
